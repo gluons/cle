@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 require 'cle/version'
 
 Gem::Specification.new do |s|
