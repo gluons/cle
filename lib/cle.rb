@@ -1,6 +1,7 @@
 ##
 # = Cle module
 module Cle
+  autoload :CLI, 'cle/cli'
   autoload :VERSION, 'cle/version'
 
   ##
