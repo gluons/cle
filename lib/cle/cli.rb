@@ -1,15 +1,20 @@
 require 'optparse'
 
 module Cle
-  # Command line interface class
+  ##
+  # == Command line interface class
   class CLI
-    def self.run
-      CLI.parse
+    ##
+    # Run CLI.
+    def self.run(arguments)
+      CLI.parse(arguments)
 
       Cle.clear
     end
 
-    def self.parse # rubocop:disable Metrics/MethodLength
+    ##
+    # Parse CLI arguments.
+    def self.parse(arguments) # rubocop:disable Metrics/MethodLength
       OptionParser.new do |opts|
         opts.banner = <<~BANNER
           Complete clear terminal screen.
@@ -22,6 +27,8 @@ module Cle
           puts opts
           exit
         end
+
+        opts.parse(arguments)
       end
     end
   end

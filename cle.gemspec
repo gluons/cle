@@ -1,3 +1,8 @@
+# coding: utf-8
+# frozen_string_literal: true
+
+$LOAD_PATH.push File.expand_path('../lib', __FILE__)
+
 require 'cle/version'
 
 Gem::Specification.new do |s|
@@ -7,6 +12,8 @@ Gem::Specification.new do |s|
   s.description = 'A simple cli to completely clear terminal screen.'
   s.authors = ['Saran Tanpituckpong']
   s.email = ['sarunta@gmail.com']
+  s.files = `git ls-files -z`.split("\x0")
+  s.executables = ['cle']
   s.license = 'Unlicense'
   s.homepage = 'https://github.com/gluons/cle'
   s.metadata = {
