@@ -13,4 +13,7 @@ Gem::Specification.new do |s|
     'issue_tracker' => 'https://github.com/gluons/cle/issues'
   }
   s.required_ruby_version = '>=2.3.0'
+
+  s.add_development_dependency 'rake', '~> 12.0'
+  s.add_development_dependency 'rubocop', '~> 0.49.1'
 end
