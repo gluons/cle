@@ -14,5 +14,5 @@ Gem::Specification.new do |s|
   s.metadata = {
     'issue_tracker' => 'https://github.com/gluons/cle/issues'
   }
-  s.required_ruby_version = ''
+  s.required_ruby_version = '>=2.3.0'
 end
