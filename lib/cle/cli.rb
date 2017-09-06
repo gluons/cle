@@ -17,7 +17,7 @@ module Cle
     def self.parse(arguments) # rubocop:disable Metrics/MethodLength
       OptionParser.new do |opts|
         opts.banner = <<~BANNER
-          Complete clear terminal screen.
+          Completely clear terminal screen.
 
           Usage: cle
         BANNER
